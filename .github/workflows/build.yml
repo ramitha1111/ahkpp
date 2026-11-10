@@ -18,6 +18,7 @@ jobs:
         node-version: [26.x]
     # AHK is built for Windows only, so we only build on Windows
     runs-on: windows-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v7
